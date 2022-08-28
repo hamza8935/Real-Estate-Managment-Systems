@@ -44,14 +44,14 @@ const BottomNavigation = () => {
                             <Image
                                 resizeMode="contain"
                                 style={{ width: 25, height: 25 }}
-                                source={require('../../assets/Images/menu.png')}
+                                source={require('../../assets/Images/menu.jpg')}
                             />
                         </View>
                     ),
                     headerRight: () => (
                         <TouchableOpacity onPress={() => navigation.navigate("NotificationScreen")}>
                             <View style={{ marginHorizontal: 10 }}>
-                                <Badge value="50" status="error" />
+                                <Badge value="50" status="success" />
                                 <Feather name="bell" color="black" size={28}
                                 />
                             </View>

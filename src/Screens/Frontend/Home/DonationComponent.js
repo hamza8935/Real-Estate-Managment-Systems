@@ -5,13 +5,11 @@ import { commonJustify } from '../../../Common/CommonStyle/CommonStyle';
 export const DonationComponent = ({ item }) => {
     return (
         <View style={[styles.main, commonJustify.rowSpaceBetween]}>
-            <View>
+            <View style={{ textAlign: "center" }}>
                 <View style={styles.margin}>
-                    <Text style={styles.heading} >Name:</Text>
                     <Text style={styles.subheading}>{item.name}</Text>
-                </View>
-                <View style={styles.margin}>
-                    <Text style={styles.heading} >Location:</Text>
+                    {/* </View>
+                <View style={styles.margin}> */}
                     <Text style={styles.subheading}>{item.location}</Text>
                 </View>
                 <View style={styles.margin}>
@@ -46,7 +44,8 @@ const styles = StyleSheet.create({
     subheading: {
         fontSize: 18,
         fontWeight: "bold",
-        color: "black"
+        color: "green",
+        textAlign: "center"
     },
     time: {
         fontSize: 15

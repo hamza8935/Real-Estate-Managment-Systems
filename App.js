@@ -16,6 +16,7 @@ export default function App() {
 const styles = StyleSheet.create({
   main: {
     height: "100%",
-    width: "100%"
+    width: "100%",
+    backgroundColor: "blue"
   }
 })

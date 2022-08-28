@@ -3,18 +3,18 @@ export const ItemArray = [
     {
         id: 1,
         title: "Buy",
-        image: require("../../../../assets/Images/home.jpg"),
+        image: require("../../../../assets/Images/photo1.jpg"),
       
     },
     {
         id: 2,
         title: "Rent",
-        image: require("../../../../assets/Images/rent.jpg"),
+        image: require("../../../../assets/Images/photo2.jpg"),
     },
     {
         id: 3,
         title: "Sell",
-        image: require("../../../../assets/Images/sail.jpg"),
+        image: require("../../../../assets/Images/photo3.jpg"),
     },
     {
         id: 4,

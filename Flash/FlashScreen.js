@@ -1,7 +1,9 @@
-import React, { useRef, useEffect, } from 'react';
+import React, { useRef, useEffect, useContext, } from 'react';
 import { Animated, ImageBackground, StyleSheet, View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+import { AuthContext } from '../src/Contexts/AuthContexts';
 const FadeInView = (props) => {
+    const { isAuthenticated } = useContext(AuthContext)
     const fadeAnim = useRef(new Animated.Value(0)).current  // Initial value for opacity: 
     const navigation = useNavigation();
     0
@@ -17,7 +19,11 @@ const FadeInView = (props) => {
     }, [fadeAnim])
     useEffect(() => {
         setTimeout(() => {
-            navigation.navigate("OnBoard")
+            if (isAuthenticated === true) {
+                navigation.navigate("BottomNavigation")
+            }else{
+                navigation.navigate("Login")
+            }
         }, 5000);
     })
     return (
